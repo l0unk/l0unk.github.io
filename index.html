@@ -49,6 +49,17 @@
             animation-fill-mode: forwards;
             transition: visibility 1s 1s;
         }
+
+        div.card:focus {
+            animation: cardani 0.3s 1 0s ease-in;
+            animation-fill-mode: forwards;
+            transition: 0.3s;
+        }
+        div.card:not(:focus) {
+            animation: cardaniback 0.3s 1 0s ease-out;
+            animation-fill-mode: forwards;
+            transition: visibility 1s 1s;
+        }
     
     </style>
     <title>lounk - github</title>
