@@ -96,6 +96,8 @@
                 $('.jumbotron').addClass('dark-mode');
                 $('hr').addClass('dark-mode');
                 $('.card').addClass('dark-mode');
+                $('#dmtoggle').addClass('btn-light');
+                $('#dmtoggle').removeClass('btn-dark');
             }
             else {
                 change.innerHTML = "Dark mode";
@@ -103,6 +105,8 @@
                 $('.jumbotron').removeClass('dark-mode');
                 $('hr').removeClass('dark-mode');
                 $('.card').removeClass('dark-mode');
+                $('#dmtoggle').removeClass('btn-light');
+                $('#dmtoggle').addClass('btn-dark');
             }
         }
     </script>
