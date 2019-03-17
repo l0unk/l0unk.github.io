@@ -1,0 +1,41 @@
+div.container.text-center{
+    margin-top: 50px;
+}
+
+div.btn-group {
+    margin-top: 10px;
+}
+body.preload *{
+animation-duration: 0s !important;
+-webkit-animation-duration: 0s !important;
+transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;}
+
+@keyframes cardani {
+    0%{
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.0);
+
+    }
+    100%{
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
+}
+@keyframes cardaniback {
+    0%{
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+
+    }
+    100%{
+        
+    }
+}
+
+div.card:hover {
+    animation: cardani 0.3s 1 0s ease-in;
+    animation-fill-mode: forwards;
+    transition: 0.3s;
+}
+div.card:not(:hover) {
+    animation: cardaniback 0.3s 1 0s ease-out;
+    animation-fill-mode: forwards;
+    transition: visibility 1s 1s;
+}
